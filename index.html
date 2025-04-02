@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catherine - Portfolio</title>
+
+    <!-- Poppins Header Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Gelasio Body Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&family=Noto+Serif+Devanagari:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- VT323 for font rotation page heading-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    
+    <!-- Berkshire Swash for font rotation page heading-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>      
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    
+    <!-- Prata for font rotation page heading-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Audiowide&family=Instrument+Serif:ital@0;1&family=Leckerli+One&family=Lexend:wght@100..900&family=Pirata+One&family=Prata&display=swap" rel="stylesheet">
+    
+    <!-- Workbench for font rotation page heading-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Workbench&display=swap" rel="stylesheet">
+
+    <!-- Pirata One for font rotation page heading-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>      
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Instrument+Serif:ital@0;1&family=Leckerli+One&family=Lexend:wght@100..900&family=Pirata+One&display=swap" rel="stylesheet">
+
+    <!-- Leckerli One for font rotation page heading-->   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Instrument+Serif:ital@0;1&family=Leckerli+One&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!-- Lexend for font rotation page heading-->   
+    <link rel="preconnect" href="https://fonts.googleapis.com">      
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Instrument+Serif:ital@0;1&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!-- Instrument Serif for font rotation page heading-->   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Gelasio", serif;
+      }
+        
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Gelasio", serif;
+      }
+
+      a{
+        color: #faf0e7;
+        text-decoration: none;
+        font-size: 16px;
+        background: #2c2c35;
+        border-radius: 50px;
+        text-align: center;
+        padding: 5px 15px;
+        width: fit-content;
+      }
+      
+      /* For nav bar*/
+      .nav-bar{
+        width: 100%;
+        background-color: #2c2c35;
+        box-shadow: 0px 5px #16161b;
+        position: fixed;
+        top: 0;
+        z-index: 2;
+      }
+      
+      .nav-bar ul{
+        width: 1200px;
+        text-align: center;
+        background-color: #2c2c35;
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px auto;
+        overflow: hidden;
+      }
+      
+      .nav-bar li{
+        float: left;
+      }
+      
+      .nav-bar a{
+        color: #f9dc6f;
+        font-size: 16px;
+        font-family: "Poppins", serif;
+        text-decoration: none;
+        padding: 15px 50px;
+        display: block;
+        text-align: center;
+        border-radius: 0px;
+      }
+      
+      #last-item{
+        float: right;
+      }
+      
+      .nav-bar a:hover{
+        background-color: #16161b;
+        border-radius: 0px;
+      }
+      
+      .nav-bar img{
+        width: 30px;
+        margin-top: -5px;
+        margin-bottom: -10px;
+      }
+        
+      /* For Computing Projects Section */
+      .cp-wrapper {
+        position: relative;
+      }
+      
+      .cp-bg{
+        background-image: url("cp-bg.png");
+        filter: brightness(50%);
+        background-size: 100%;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: -10;
+      }
+      
+      .cp-content{
+        position: relative;
+        display: flex;
+        align-items: center;            
+        justify-content: center;
+      }
+      
+      .cp-projects{
+        margin: auto;
+        width: 1200px;
+        height: 400px;
+      }
+        
+      #card-area{
+        padding: 20px 0;
+      }
+        
+      .box{
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+        color: #2c2c35;
+      }
+        
+      .box img{
+        width: 100%;
+        border-radius: 10px;
+        display: block;
+        transition: transform 0.5s;
+      }
+        
+      .overlay{
+        height: 0;
+        width: 100%;
+        background: linear-gradient(transparent, #de98e6 70%);
+        border-radius: 10px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 40px;
+        text-align: center;
+        font-size: 14px;
+        transition: height 0.5s;
+      }
+        
+      .overlay h3{
+        font-weight: 500px;
+        margin-bottom: 5px;
+        margin-top: 80%;
+        font-family: "Poppins", sans-serif;
+        font-size: 24px;
+        letter-spacing: 2px;
+      }
+        
+      .boxLhover img{
+        transform: scale(1.2);
+      }
+        
+      .box:hover .overlay{
+        height: 100%;
+      }
+        
+      /* For Graphic Design Projects Section */
+      .gdp-wrapper {
+        position: relative;
+        height: 600px;
+      }
+      
+      .gdp-bg{
+        background-image: url("gd_bg.png");
+        filter: brightness(50%);
+        background-size: 100%;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: -10;
+      }
+      
+      .gdp-content{
+        margin-left: 400px;
+        position: relative;
+        height: 600px;
+        display: flex;
+        align-items: center;            
+        justify-content: center;
+      }
+
+      .card {
+        width: 100px;
+        height: 300px;
+        border-radius: .75rem;
+        background-size: cover;
+        cursor: pointer;
+        overflow: hidden;           
+        border-radius: 2rem;
+        margin: 50px 10px 50px 0px;              
+        display: flex;
+        align-items: flex-end;
+        transition: .6s cubic-bezier(.28,-0.03,0,.99);
+        box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+      }
+
+      .card > .row {
+        color: #faf0e7;
+        display: flex;
+        flex-wrap: nowrap;
+      }
+
+      .card > .row > .icon {
+        background: #2c2c35;
+        font-family: "Poppins", sans-serif;
+        color: #faf0e7;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;              
+        align-items: center;
+        margin-left: 25px;
+        margin-top: 15px;
+        margin-right: 15px;
+      }
+
+      .card > .row > .description {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+        height: 80px;
+        width: 520px;
+        opacity: 0;
+        transform: translateY(30px);
+        transition-delay: .3s;
+        transition: all .3s ease;
+      }
+
+      input {
+        display: none;
+      }
+
+      input:checked + label {
+        width: 600px;
+      }
+
+      input:checked + label .description {
+        opacity: 1 !important;            
+        transform: translateY(0) !important;
+      }
+
+      /* Made changes to elements below */
+      .description h4 {
+        font-family: "Poppins", sans-serif;
+        text-transform: uppercase;
+        text-shadow: 0px 0px 10px #2c2c35; 
+      }
+          
+      .card[for="c1"] {
+        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('GDprj_Mag_preview.png');
+        background-repeat: no-repeat;
+        background-position: 0% 85%;
+      }
+
+      .card[for="c2"] {
+        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('GDprj_Website_preview.png');
+        background-repeat: no-repeat;
+        background-position: 0% 0%;
+      }
+
+      .card[for="c3"] {
+        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url('DGprj_Brand_preview.jpg');
+        background-repeat: no-repeat;
+        background-position: 10% 0%;
+      }
+        
+      .scrolling-band{
+        color: #de98e6;
+        background-color: #2c2c35;
+        font-size: 24px;
+        padding-block: 8px;
+        border-block: 3px solid #77306a;
+        display: flex;
+        overflow: hidden;
+        gap: 20px;
+      }
+        
+      .scrolling-band ul{
+        min-width: 100%;
+        list-style: none;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        animation: scroll 25s linear infinite;
+      }
+        
+      .scrolling-band span {
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+        
+      @keyframes scroll{
+        to{
+          transform: translateX(calc(-100% - 20px));
+        }
+      }
+        
+      .band-computing{
+        list-style: none;
+        min-width: 100%;
+        overflow: hidden;
+        display: flex;
+      }
+        
+      .band-computing ul{
+        min-width: 100%;
+        list-style: none;
+        flex-shrink: 0;
+        display: flex;
+        gap: 70px;
+        animation: colour-change 2s steps(1) infinite;
+      }
+        
+      .band-computing li{
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: "Poppins", sans-serif;
+        margin-left: -30px;
+      }
+        
+      @keyframes colour-change {
+        0% {
+          background-color: #de98e6;
+          color: #2c2c35;
+          border-block: 3px solid #de98e6;
+          padding-block: 8px;
+        }
+
+        50% {
+          background-color: #2c2c35;
+          color: #de98e6;
+          border-block: 3px solid #de98e6;
+        }
+
+        100% {
+          background-color: #de98e6;
+          color: #2c2c35;
+          border-block: 3px solid #de98e6;
+        }
+      }
+        
+      h1 h2{
+        margin: 100px 0px 20px 200px;
+        font-family: "Poppins", sans-serif;
+        color: #faf0e7;
+        font-size: 48px;
+      }
+        
+      #font-changing{
+        animation: font-change 2s  ease-in-out  infinite;
+        line-height: 1.2px;
+        font-size: 68px;
+        width: 310px;
+        position: absolute;
+        z-index: 1;
+        left: 30px;
+        top: 550px;
+      }
+        
+      @keyframes font-change {
+        0%, 100% {
+          color: #f9dc6f;
+          font-family: "Lexend", sans-serif;
+        }
+          
+        10%{
+          color: #f9dc6f;
+          font-family: "Poppins", sans-serif;
+        }
+          
+        20%{
+          color: #f9dc6f;
+          font-family: "Berkshire Swash", fantasy;
+        }
+          
+        30%{
+          color: #de98e6;
+          font-family: "Leckerli One", cursive;
+        }
+          
+        40%{
+          color: #f9dc6f;
+          font-family: "Workbench", monospace;
+        }
+
+        50% {
+          color: #de98e6;
+          font-family: "VT323", monospace;
+        }
+          
+        60%{
+          color: #faf0e7;
+          font-family: "Pirata One", fantasy;
+        }
+          
+        70%{
+          color: #faf0e7;
+          font-family: "Prata", serif;
+        }
+          
+        80%{
+          color: #de98e6;
+          font-family: "Gelasio", serif;
+        }
+          
+        90%{
+          color: #faf0e7;
+          font-family: "Instrument Serif", serif;
+        }
+      }
+        
+      table{
+        margin: auto;
+        margin-top: 50px;
+        width: 1000px;
+      }
+        
+      td{
+        padding-right: 40px;
+      }
+      
+      #epic-goose{
+        width: 1270px;
+        height: 620px;
+        object-fit: cover;
+        object-position: 100% 0%;
+        left: -20px;
+        top: 30px;
+        position: relative;
+      }
+      
+      #detail-goose{
+        width: 855px;
+        object-fit: cover;
+        position: absolute;
+        z-index: -1;
+        top: 45px;
+        left: 350px;
+      }
+      
+      #frame{
+        width: 1200px;
+        height: 600px;
+        outline: #de98e6 solid 10px;
+        margin: auto;  
+        padding: 20px;
+        position: absolute;
+        z-index: 2;
+        margin-top: 50px;
+      }
+      
+      .text{
+        float: left;
+        position: absolute;
+        color: #faf0e7;
+        z-index: 4;
+        top: -10px;
+      }
+      
+      .title-wrapper{
+        position: relative;
+        top: 55px;
+        height: 800px;
+      }
+      
+      .title-section{
+        background-image: url("title_bg.png");
+        filter: brightness(50%);
+        background-size: 100%;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: -10;
+      }
+      
+      .title-content{
+        width: 1200px;
+        height: 850px;
+        margin: auto;
+        position: relative;
+        z-index: 1;
+      }
+        
+      .title-content h1{
+        font-family: "Poppins", sans-serif;
+        color: #F2CF66;
+        font-size: 115px;
+        margin-top: 100px;
+        margin-left: 30px;
+        line-height: 90px;
+      }
+        
+      .title-content h2{
+        font-family: "Poppins", sans-serif;
+        margin-left: 35px;
+        font-size: 24px;
+        line-height: 120px;
+        color: #FAF0E7;
+      }
+      
+      .title-content p{
+        margin-left: 40px;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 0.001em;
+        color: #FAF0E7;
+      }
+      
+      #first-line-tag{
+        margin-top: 75px;
+      }
+      
+      #first-line-name{
+        padding-top: 37px;
+      }
+      
+      .about-wrapper{
+        position: relative;
+        align-content: center;
+      }
+      
+      .about-section{
+        background-image: url("pingu.png");
+        background-size: 100%;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: -10;
+      }
+      
+      .about-content{
+        width: 1200px;
+        height: 750px;
+        margin: auto;
+        position: relative;
+        z-index: 1;
+      }
+      
+      .contact-wrapper{
+        position: relative;
+        align-content: center;
+      }
+      
+      .contact-section{
+        background-image: url("pingu.png");
+        background-size: 100%;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: -10;
+      }
+      
+      .contact-content{
+        width: 1200px;
+        height: 500px;
+        margin: auto;
+        position: relative;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav-bar">
+      <ul>
+        <li><a href="https://cmlppatt.github.io/Graphic-Design-Projects/">COUNTRY ROADS</a></li>
+        <li><a href="https://cmlppatt.github.io/Graphic-Design-Projects/#graphic-design">GRAPHIC DESIGN</a></li>
+        <li><a href="https://cmlppatt.github.io/Graphic-Design-Projects/#computing">COMPUTING</a></li>
+        <li><a href="https://cmlppatt.github.io/Graphic-Design-Projects/#about">ABOUT</a></li>
+        <li id="last-item"><a href="mailto:cmlppatt@uwaterloo.ca"><img src="mail_icon.png" alt="Clickable mail icon"></a></li>
+      </ul>
+    </div>
+    
+    <div class="page">
+      <div class="title-wrapper">
+      
+        <div class="title-section"></div>
+        
+      <div class="title-content">
+        <div id="frame"></div>
+        <div class="text">
+          <h1>Howdy<br>&hairsp;There</h1>
+          <p id="first-line-tag">What, the massive goose?</p>
+          <p>Don't think about it too much...</p>
+          <h2 id="first-line-name">( I'm</h2>
+          <div id="font-changing">
+            Catherine
+          </div>
+          <h2>
+            by the way )
+          </h2>
+        </div>
+        <img id="epic-goose" src="goose.gif" alt="Huge epic canadian goose with cowboy hat, and ruff around its neck. Inside of its mouth is divded into a bunch of small triangles which change colours">
+        <img id="detail-goose" src="details-goose.png" alt="Excess goose ruff and cowboy hat string">
+      </div>
+      </div>
+      
+      <div id="about"></div>
+      <!-- Add about section-->
+      <div class="about-wrapper">
+        <div class="about-section"></div>
+        <div class="about-content">
+        
+        </div>
+      </div>
+      
+      <div id="graphic-design"></div>
+        <div class="scrolling-band">
+          <ul>
+            <li>
+              <span> Wowww Check These Graphic Design Projects</span>
+            </li>
+            <li>
+              <span> Wowww Check These Graphic Design Projects</span>
+            </li>
+            <li>
+              <span> Wowww Check These Graphic Design Projects</span>
+            </li>
+            <li>
+              <span> Wowww Check These Graphic Design Projects</span>
+            </li>
+            <li>
+              <span> Wowww Check These Graphic Design Projects</span>
+            </li>
+            <li>
+              <span> Wowww Check These Graphic Design Projects</span>
+            </li>
+          </ul>
+          <ul aria-hidden="true">
+            <li>
+              <span> Wowww Check These Graphic Design Projects</span>
+            </li>
+            <li>
+              <span> Wowww Check These Graphic Design Projects</span>
+            </li>
+            <li>
+              <span> Wowww Check These Graphic Design Projects</span>
+            </li>
+            <li>
+              <span> Wowww Check These Graphic Design Projects</span>
+            </li>
+            <li>
+              <span> Wowww Check These Graphic Design Projects</span>
+            </li>
+            <li>
+              <span> Wowww Check These Graphic Design Projects</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="gdp-wrapper">
+          <div class="gdp-bg"></div>
+          
+          <div class="gdp-content">
+            <!-- Branding Porject -->
+            <input type="radio" name="slide" id="c3">
+            <label for="c3" class="card">
+              <div class="row">
+                <div class="icon">3</div>
+                <div class="description">
+                  <h4>Party Anthem Concert - Event Branding</h4>                        
+                  <a href="https://cmlppatt.github.io/branding-project-page/">View Project Details</a>
+                </div>
+              </div>
+            </label>
+
+            <!-- Website Project -->
+            <input type="radio" name="slide" id="c2">
+            <label for="c2" class="card">
+              <div class="row">
+                <div class="icon">2</div>
+                <div class="description">
+                  <h4>Tina's Grill - Website Redesign</h4>
+                  <a href="https://cmlppatt.github.io/website-project-page/">View Project Details</a>               
+                </div>
+              </div>
+            </label>
+
+            <!-- Magazine Project -->
+            <input type="radio" name="slide" id="c1" checked>
+            <label for="c1" class="card">
+              <div class="row">
+                <div class="icon">1</div>
+                <div class="description">
+                  <h4>Where's The Inspo? - Magazine</h4>
+                  <a href="https://cmlppatt.github.io/magazine-project-page/">View Project Details</a>
+                </div>
+              </div>
+            </label>
+        </div>
+      </div>
+      <div id="computing"></div>
+        <div class="band-computing">
+          <ul>
+            <li>Sick Computing Projects</li>
+            <li>Sick Computing Projects</li>
+            <li>Sick Computing Projects</li>
+            <li>Sick Computing Projects</li>
+            <li>Sick Computing Projects</li>
+            <li>Sick Computing Projects</li>
+            <li>Sick Computing Projects</li>
+          </ul>
+        </div>
+      
+      <div class="cp-wrapper">
+        <div class="cp-bg"></div>
+        <div class="cp-content">   
+        <div id="card-area">
+            <table>
+              <tr>
+                <td>
+                  <div class="box">
+                    <img src="preview-c.png" alt="">
+                    <div class="overlay">
+                      <h3>C# Project</h3>
+                      <a href="https://cmlppatt.github.io/csharp-project-page/">Show Me More</a>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="box">
+                    <img src="preview-python.png" alt="">
+                    <div class="overlay">
+                      <h3>Python Project</h3>
+                      <a href="https://cmlppatt.github.io/python-project-page/">Show Me More</a>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <div class="box">
+                    <img src="preview-racket.png" alt="">
+                    <div class="overlay">
+                      <h3>Racket Project</h3>
+                      <a href="https://cmlppatt.github.io/Racket-project-page/">Show Me More</a>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>  
+        </div>
+      </div>
+      
+      <div class="contact-wrapper">
+        <div class="contact-section"></div>
+        <div class="contact-content">
+          
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
